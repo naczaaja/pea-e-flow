@@ -1,13 +1,32 @@
 <mat-toolbar color="primary">
-  <span>E-Flow</span>
-  <span class="flex-fill"></span>
-  <button mat-icon-button aria-label="Search icon">
-    <mat-icon>search</mat-icon>
-  </button>
-  <div class="vl"></div>
-  <button mat-icon-button aria-label="Notofication icon">
-    <mat-icon [matBadge]="notiBadge" matBadgeColor="warn"
-      >notifications_none</mat-icon
-    >
-  </button>
+    <span>E-Flow</span>
+    <span class="flex-fill"></span>
+    <div class="d-flex align-items-center">
+        <button mat-button aria-label="Search icon">
+            <mat-icon>search</mat-icon>
+        </button>
+        <div class="vl"></div>
+        <button mat-button aria-label="Notofication icon">
+            <mat-icon [matBadge]="notiBadge" matBadgeColor="warn">notifications_none</mat-icon>
+        </button>
+    </div>
+    <button mat-button [matMenuTriggerFor]="menu">
+        <img class="avatar rounded-circle bg-white"
+            src="https://i.pinimg.com/originals/eb/34/92/eb349216ccab535bb2441762aad905c1.jpg" alt="">
+        <span class="ms-2">CC Goddamn</span>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </button>
+    </mat-menu>
 </mat-toolbar>
