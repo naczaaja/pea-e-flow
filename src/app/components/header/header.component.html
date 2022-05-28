@@ -2,7 +2,7 @@
   <button (click)="onClickNavToggle()" mat-button>
     <mat-icon>menu</mat-icon>
   </button>
-  <span>E-Flow</span>
+  <span *ngIf="!mobileQueryMax">E-Flow</span>
   <span class="flex-fill"></span>
   <div class="d-flex align-items-center">
     <button mat-button aria-label="Search icon">
