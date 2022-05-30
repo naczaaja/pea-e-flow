@@ -18,6 +18,8 @@ import { TasksHomeComponent } from './components/tasks/tasks-home/tasks-home.com
 import { TasksCreateComponent } from './components/tasks/tasks-create/tasks-create.component';
 import { TasksEditComponent } from './components/tasks/tasks-edit/tasks-edit.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, SideNavComponent, TasksHomeComponent, TasksCreateComponent, TasksEditComponent],
@@ -32,7 +34,8 @@ import { MatCardModule } from '@angular/material/card';
     MatMenuModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
