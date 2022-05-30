@@ -14,9 +14,13 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MatListModule } from '@angular/material/list';
+import { TasksHomeComponent } from './components/tasks/tasks-home/tasks-home.component';
+import { TasksCreateComponent } from './components/tasks/tasks-create/tasks-create.component';
+import { TasksEditComponent } from './components/tasks/tasks-edit/tasks-edit.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SideNavComponent],
+  declarations: [AppComponent, HeaderComponent, SideNavComponent, TasksHomeComponent, TasksCreateComponent, TasksEditComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,7 +31,8 @@ import { MatListModule } from '@angular/material/list';
     MatBadgeModule,
     MatMenuModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
