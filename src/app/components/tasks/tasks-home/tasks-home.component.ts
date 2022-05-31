@@ -22,33 +22,33 @@ export class TasksHomeComponent implements OnInit {
   feedData() {
     const dummy: Task[] = [
       {
-        name: 'Naczaaja',
-        date: '05/10/2565',
+        name: 'นายวณัฐ เกิดศุภชัย',
+        date: '05/19/2022',
+        status: 'A0',
+        image: 'https://www.art-tech.co.th/wp-content/uploads/2019/04/606bannerhome.png'
+      },
+      {
+        name: 'นายบุญช่วย บัวผุด',
+        date: '04/29/2022',
         status: 'A1',
         image: 'https://www.art-tech.co.th/wp-content/uploads/2019/04/606bannerhome.png'
       },
       {
-        name: 'Naczaaja',
-        date: '05/10/2565',
+        name: 'อบต.กระแสบน(สายเขาผักกูด-เขาวงเวียน)',
+        date: '05/10/2022',
         status: 'A1',
         image: 'https://www.art-tech.co.th/wp-content/uploads/2019/04/606bannerhome.png'
       },
       {
-        name: 'Naczaaja',
-        date: '05/10/2565',
-        status: 'A1',
+        name: 'นายประเวศ มงคลคำ',
+        date: '03/10/2022',
+        status: 'A2',
         image: 'https://www.art-tech.co.th/wp-content/uploads/2019/04/606bannerhome.png'
       },
       {
-        name: 'Naczaaja',
-        date: '05/10/2565',
-        status: 'A1',
-        image: 'https://www.art-tech.co.th/wp-content/uploads/2019/04/606bannerhome.png'
-      },
-      {
-        name: 'Naczaaja',
-        date: '05/10/2565',
-        status: 'A1',
+        name: 'อบต.ทุ่งควายกิน(ซอยขวัญเมือง)',
+        date: '05/05/2022',
+        status: 'B1',
         image: 'https://www.art-tech.co.th/wp-content/uploads/2019/04/606bannerhome.png'
       }
     ]
