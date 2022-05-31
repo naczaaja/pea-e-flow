@@ -19,6 +19,11 @@ import { TasksCreateComponent } from './components/tasks/tasks-create/tasks-crea
 import { TasksEditComponent } from './components/tasks/tasks-edit/tasks-edit.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatSortModule } from '@angular/material/sort';
+
 
 
 @NgModule({
@@ -35,7 +40,11 @@ import { MatTableModule } from '@angular/material/table';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent],

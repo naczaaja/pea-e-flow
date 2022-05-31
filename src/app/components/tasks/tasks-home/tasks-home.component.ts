@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Task } from 'src/app/models/product.model';
 
@@ -13,9 +14,14 @@ export class TasksHomeComponent implements OnInit {
 
   dataSource = new MatTableDataSource<Task>();
 
-  constructor() { }
+  textSearch?: string;
+
+  @ViewChild(MatSort, { static: true }) sort!: MatSort
+
+    constructor() { }
 
   ngOnInit(): void {
+    this.dataSource.sort = this.sort
     this.feedData();
   }
 
@@ -53,5 +59,18 @@ export class TasksHomeComponent implements OnInit {
       }
     ]
     this.dataSource.data = dummy
+  }
+
+  search(event: Event | null) {
+    let fliterValue = '';
+    if (event) {
+      fliterValue = (event.target as HTMLInputElement).value;
+    }
+    this.dataSource.filter = fliterValue.trim().toLowerCase();
+  }
+
+  clearSearch() {
+    this.textSearch = '';
+    this.search(null)
   }
 }
